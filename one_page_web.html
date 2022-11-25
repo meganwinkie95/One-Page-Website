@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Travel Japan</title>
+	<link rel="stylesheet" href=".\CSS\One-page-website.css">
+	<script src="JS\One_Page.js"></script>
+	</head>
+	<body>
+	
+		<!-- NAV -->
+		<nav>
+		<div>
+			<div>
+				<ul>
+					<a href="#home" id="link"><li>Home</li></a>
+					<a href= "#gallery"><li>Gallery</li></a>
+					<a href= "#reviews"><li>Reviews</li></a>
+					<a href="#contact"><li>Booking</li></a>
+				</ul>
+			</div>
+		</div>
+		</nav>
+		<!--END NAV-->
+		
+		<!--HOME-->
+		<div id="home">
+			<div>
+				<div>
+					<span><h1>Travel Japan</h1></span>
+					<h3>Welcome to Travel Japan! Where your fun is our Priority! Have a look around!</h3>
+				</div>
+			</div>
+		</div>
+		<!--END HOME-->
+		
+		<!--GALLERY-->
+		<section>
+			<div id="gallery">
+				<h1>Gallery<h1>
+				<div>
+				
+					<!--PHOTO CONTAINER 1-->
+				<div class="row">
+					<div>
+						<div class="column">
+						<img src=".\images\plants\plant1-small.png" onclick="openModal();currentSlide(1)" alt="Photo of our Lobby"
+						class="hover-shadow">
+						</div>
+					</div>
+					<!--END PHOTO CONTAINER 1-->
+					
+					
+					<!--PHOTO CONTAINER 2-->
+					<div>
+						<div class="column">
+							<img src=".\images\plants\plant2-small.png" onclick="openModal();currentSlide(2)" alt="Photo of our Ice room"
+							class="hover-shadow">
+						</div>
+					</div>
+					<!--END PHOTO CONTAINER 2-->
+					
+					
+					<!--PHOTO CONTAINER 3-->
+					<div>
+						<div class="column">
+							<img src=".\images\plants\plant3-small.png" onclick="openModal();currentSlide(3)"  alt="Photo of our Castle room"
+							class="hover-shadow">
+						</div>
+					</div>
+					<!--END PHOTO CONTAINER 3-->
+					
+					
+					<!--PHOTO CONTAINER 4-->
+					<div>
+						<div class="column">
+							<img src=".\images\plants\plant4-small.png" onclick="openModal();currentSlide(4)" alt="Photo of our Cave room"
+							class="hover-shadow">
+						</div>
+					</div>
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;
+					</span>
+					<div class="modal-content">
+
+						<div class="mySlides">
+							<div class="numbertext">1 / 4</div>
+							<img src=".\images\plants\plant1.png" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 4</div>
+							<img src=".\images\plants\plant2.png" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 4</div>
+							<img src=".\images\plants\plant3.png" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">4 / 4</div>
+							<img src=".\images\plants\plant4.png" style="width:100%">
+						</div>
+						
+						<!--Next/previous controls-->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095</a>
+
+						<!--Caption text-->
+						<div class="caption-container">
+							<p id="caption"></p>
+							
+						</div>
+						<!--Thumbnail image controls-->
+						<div class="column">
+							<img class="control" src=".\images\plants\plant1-small.png"
+							onclick="currentSlide(1)" alt="japan">
+						</div>
+
+						<div class="column">
+							<img class="control" src=".\images\plants\plant2-small.png"
+							onclick="currentSlide(2)" alt="japan">
+						</div>
+
+						<div class="column">
+							<img class="control" src=".\images\plants\plant3-small.png"
+							onclick="currentSlide(3)" alt="japan">
+						</div>
+						<div class="column">
+							<img class="control" src=".\images\plants\plant4-small.png"
+							onclick="currentSlide(4)" alt="japan">
+						</div>
+					</div>
+				</div>
+					</section>
+					 <!--END GALLERY-->
+					
+		<section>
+			<div id="reviews">
+				<div>
+				<h1>Reviews</h1>
+				
+			<!--VIDEO CONTAINER 1-->
+					<div>
+						<div>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/JW70oTiQbm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<p>Watch Jenna Marbles enjoy her stay with us!</p>
+							</div>
+						</div>
+					</div>
+					<!--VIDEO CONTAINER 1-->
+				</div>
+		</section>
+		 
+		 <!--RSVP-->
+		 <section>
+			<div id="contact">
+				<div>
+					<h1>Bookings</h1>
+					<div>
+						<h2><span>Our tours will take you to the best locations for your trip!</span>
+						<br />Book your adventure today!
+						</h2>
+						<p>
+							Secure your spot below and get excited!
+						</p>
+						<div>
+							<form action=" " method="post">
+								<input class="BOOK" type="text" value="First Name">
+								<input class="BOOK" type="text" value="Last Name">
+								<input class="BOOK" type="text" value="Email Address">
+								<input class="BOOK" type="text" value="Phone number">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<input type="submit" value="submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--END RSVP-->
+		
+		<!--FOOTER-->
+		<footer>
+		<div>
+			www.TravelJapan.com &nbsp;|&nbsp &copy; 2022
+		</div>
+		</footer>
+		<!--END FOOTER-->
+	</body>
+</html>
+					
+		
